@@ -11,10 +11,10 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'Lab 1 Demo',
       theme: ThemeData(
         // This is the theme of your application.
-        // gdvgfvsvgfvvfgvfgvfv
+        // g
         // TRY THIS: Try running your application with "flutter run". You'll see
         // the application has a purple toolbar. Then, without quitting the app,
         // try changing the seedColor in the colorScheme below to Colors.green
@@ -30,7 +30,7 @@ class MyApp extends StatelessWidget {
         // tested with just a hot reload.
         colorScheme: .fromSeed(seedColor: Colors.deepPurple),
       ),
-      home: const MyHomePage(title: 'Flutter Demo Home Page'),
+      home: const MyHomePage(title: 'Lab 1 Demo'),
     );
   }
 }
@@ -104,12 +104,32 @@ class _MyHomePageState extends State<MyHomePage> {
           // wireframe for each widget.
           mainAxisAlignment: .center,
           children: [
-            const Text('You have pushed the button this many times:'),
-            Text(
-              '$_counter',
-              style: Theme.of(context).textTheme.headlineMedium,
-            ),
-          ],
+  const Icon(
+    Icons.flutter_dash,
+    size: 70,
+    color: Colors.deepPurple,
+  ),
+
+  const SizedBox(height: 15),
+
+  const Text(
+    'Welcome to Huỳnh Đức',
+    style: TextStyle(
+      fontSize: 20,
+      fontWeight: FontWeight.bold,
+    ),
+  ),
+
+  const SizedBox(height: 8),
+
+  const Text(
+    'Your first customized layout 😊',
+    style: TextStyle(
+      fontSize: 12,
+      color: Colors.grey,
+    ),
+  ),
+],
         ),
       ),
       floatingActionButton: FloatingActionButton(
